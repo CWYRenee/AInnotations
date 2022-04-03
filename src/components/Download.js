@@ -21,13 +21,19 @@ export default function Download() {
             <Select
             labelId="simple-select-label"
             id="demo-simple-select"
-            value={lang}
+            defaultValue={50}
+            // value={lang}
             label="Language"
             onChange={handleChange}
             >
             <MenuItem value={10}>Ukrainian</MenuItem>
             <MenuItem value={20}>French</MenuItem>
             <MenuItem value={30}>Spanish</MenuItem>
+            <MenuItem value={40}>Chinese</MenuItem>
+            <MenuItem value={50}>English</MenuItem>
+            <MenuItem value={60}>Arabic</MenuItem>
+            <MenuItem value={70}>Hindi</MenuItem>
+            <MenuItem value={80}>Italian</MenuItem>
             </Select>
         </FormControl>
         </Box>
