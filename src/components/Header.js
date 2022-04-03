@@ -96,6 +96,7 @@ export default function Header() {
           <div className={classes.download}>
           <Download />
           </div>
+          <br/>
           <Scroll to="info_cards" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.icon} />
