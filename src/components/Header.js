@@ -4,6 +4,7 @@ import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardVoiceSharpIcon from '@mui/icons-material/KeyboardVoiceSharp';
 import { Link as Scroll } from 'react-scroll';
+import Download from './Download';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,7 +40,13 @@ const useStyles = makeStyles((theme) => ({
     color: '#000080',
     fontSize: '4rem',
   },
+  download: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 }));
+
 export default function Header() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
@@ -75,7 +82,7 @@ export default function Header() {
           <h1 className={classes.title}>
             <span>Upload Now</span>
             <br/>
-            <div>
+            <div alignItems= 'center'>
             <IconButton onClick={() => fileRef.current.click()}>
               <KeyboardVoiceSharpIcon fontSize='large' className={classes.icon}/>
             </IconButton>
@@ -88,6 +95,9 @@ export default function Header() {
           />
             </div>
           </h1>
+          <div className={classes.download}>
+          <Download />
+          </div>
           <Scroll to="info_cards" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.icon} />
