@@ -1,0 +1,14 @@
+8
+all about optomization
+have several characteristics, trying to find the best values
+start by creating a base model
+several fields that store characteristics of the prototype. 
+example: optomizing the geometry of an airplane. Create a class named airplane with fields such as wingspan, wing angle, length, weight, angle of attack, etc. 
+Make several instanes of the class, to make prototypes with different characteristics. 
+create several different prototypes with a broad range of values
+simulate the prototype, get results on how well it performed
+basically evolution; the best prototypes survive to the next generation poor ones are more likely to go extinct. 
+Slight modicifactions to the prototypes to create the next generation, like mutations in evotution. 
+A good way is bell curve.
+Find the standard deviation, random number generator input a number into a bell curve, giving how many standard deviations to change the current prototype's wingspan by. 
+After mutating all prototypes, new generation, input in the simulation, repeating the process until you have a highly optomized prototype.
