@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import KeyboardVoiceSharpIcon from '@mui/icons-material/KeyboardVoiceSharp';
 import { Link as Scroll } from 'react-scroll';
 import Download from './Download';
+import Record from './Record';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -78,12 +78,16 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            <span>Upload Now</span>
+            <span>Record Now</span>
+            <br/>
             <br/>
             <div alignItems= 'center'>
-            <IconButton onClick={() => {fileRef.current.click()}}>
+            <Record/>
+            <br/>
+            <br/>
+            {/* <IconButton onClick={() => {fileRef.current.click()}}>
               <KeyboardVoiceSharpIcon fontSize='large' className={classes.icon}/>
-            </IconButton>
+            </IconButton> */}
             <input
             ref={fileRef}
             onChange={handleChange}
