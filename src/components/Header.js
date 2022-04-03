@@ -58,9 +58,11 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
+        <Scroll to="info_cards" smooth={true}>
           <h1 className={classes.appbarTitle}>
             AInnotations
           </h1>
+          </Scroll>
         </Toolbar>
       </AppBar>
 
@@ -86,7 +88,7 @@ export default function Header() {
           />
             </div>
           </h1>
-          <Scroll to="place-to-visit" smooth={true}>
+          <Scroll to="info_cards" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.icon} />
             </IconButton>
