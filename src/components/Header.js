@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, Component } from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -59,13 +59,6 @@ export default function Header() {
     console.log(file);
   };
 
-  class didUpload extends Component {
-    render() {
-      if(fileRef != null)
-        return <Download />;
-    }
-  }
-
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
@@ -88,7 +81,7 @@ export default function Header() {
             <span>Upload Now</span>
             <br/>
             <div alignItems= 'center'>
-            <IconButton onClick={() => {fileRef.current.click(); didUpload()}}>
+            <IconButton onClick={() => {fileRef.current.click()}}>
               <KeyboardVoiceSharpIcon fontSize='large' className={classes.icon}/>
             </IconButton>
             <input
