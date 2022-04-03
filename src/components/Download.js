@@ -35,32 +35,3 @@ export default function Download() {
   )
 }
 
-
-// export default function Download(){
-//     const [lang, setLang] = React.useState('');
-//     const handleChange = (event) => {setLang(event.target.value);
-
-//     return(
-//         <Stack direction="row" spacing={3}>
-//         <Button variant="contained">Download</Button>
-//         <Box sx={{ minWidth: 120 }}>
-//         <FormControl fullWidth>
-//             <InputLabel id="simple-select-label">Language</InputLabel>
-//             <Select
-//             labelId="simple-select-label"
-//             id="demo-simple-select"
-//             value={lang}
-//             label="Language"
-//             onChange={handleChange}
-//             >
-//             <MenuItem value={10}>Ukrainian</MenuItem>
-//             <MenuItem value={20}>French</MenuItem>
-//             <MenuItem value={30}>Spanish</MenuItem>
-//             </Select>
-//         </FormControl>
-//         </Box>
-//         </Stack>
-//     )
-
-// }
-// }
