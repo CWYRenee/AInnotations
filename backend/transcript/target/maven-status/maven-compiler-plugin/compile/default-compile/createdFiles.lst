@@ -1,9 +1,0 @@
-com/megahack/ateam/transcript/controller/JobRunnerController.class
-com/megahack/ateam/transcript/util/Word.class
-com/megahack/ateam/transcript/TranscriptApplication.class
-com/megahack/ateam/transcript/controller/TranscriptController.class
-com/megahack/ateam/transcript/util/JsonParse.class
-com/megahack/ateam/transcript/config/AppConfig.class
-com/megahack/ateam/transcript/msg/Body$Message.class
-com/megahack/ateam/transcript/msg/Body.class
-com/megahack/ateam/transcript/config/EnvConfig.class
